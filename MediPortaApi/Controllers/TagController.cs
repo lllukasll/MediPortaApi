@@ -1,7 +1,10 @@
-﻿using MediPortaApi.Entities;
+﻿using Azure;
+using MediPortaApi.Entities;
 using MediPortaApi.Helpers;
 using MediPortaApi.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
+using System.ComponentModel;
 
 namespace MediPortaApi.Controllers
 {
@@ -18,6 +21,9 @@ namespace MediPortaApi.Controllers
             _tagService = tagService;
         }
 
+        /// <summary>
+        /// Updates list of tags
+        /// </summary>
         [HttpGet("RefreshTags")]
         public async Task<ActionResult> RefreshTags()
         {
@@ -26,6 +32,9 @@ namespace MediPortaApi.Controllers
             return Ok();
         }
 
+        /// <summary>
+        /// Retrives sorted list of tags : SortBy accepts "name" and "percentage"
+        /// </summary>
         [HttpGet("GetTags")]
         public async Task<ActionResult<List<Tag>>> GetTags(string sortBy, bool sortDesc)
         {

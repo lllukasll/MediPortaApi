@@ -6,6 +6,7 @@ using MediPortaApi.Services;
 using MediPortaApi.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Net;
+using System.Reflection;
 
 namespace MediPortaApi
 {
@@ -30,7 +31,13 @@ namespace MediPortaApi
 
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+
+            builder.Services.AddSwaggerGen(c =>
+            {
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
+            });
 
             var app = builder.Build();
 
@@ -40,6 +47,7 @@ namespace MediPortaApi
 
             app.UseSwagger();
             app.UseSwaggerUI();
+
             app.ApplyMigrations();
             
             
