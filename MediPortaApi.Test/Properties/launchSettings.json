@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MediPortaApi.Test": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

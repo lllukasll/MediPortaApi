@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediPortaApi", "MediPortaApi\MediPortaApi.csproj", "{D54A50D7-9701-455E-A6DE-5E9A77CCD622}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediPortaApi.Test", "MediPortaApi.Test\MediPortaApi.Test.csproj", "{B37192C0-2347-4350-88F5-C7C741A03E8B}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9506DD0A-6FB4-41B8-A6CD-F2A9DCBE5B15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D54A50D7-9701-455E-A6DE-5E9A77CCD622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54A50D7-9701-455E-A6DE-5E9A77CCD622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54A50D7-9701-455E-A6DE-5E9A77CCD622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54A50D7-9701-455E-A6DE-5E9A77CCD622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B37192C0-2347-4350-88F5-C7C741A03E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B37192C0-2347-4350-88F5-C7C741A03E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B37192C0-2347-4350-88F5-C7C741A03E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B37192C0-2347-4350-88F5-C7C741A03E8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9506DD0A-6FB4-41B8-A6CD-F2A9DCBE5B15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9506DD0A-6FB4-41B8-A6CD-F2A9DCBE5B15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9506DD0A-6FB4-41B8-A6CD-F2A9DCBE5B15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9506DD0A-6FB4-41B8-A6CD-F2A9DCBE5B15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {084D9A0A-50F8-4CDF-9FB0-D74A64841C0D}
+	EndGlobalSection
+EndGlobal

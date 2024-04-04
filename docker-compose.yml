@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  mediportaapi:
+    image: ${DOCKER_REGISTRY-}mediportaapi
+    build:
+      context: .
+      dockerfile: MediPortaApi/Dockerfile
